@@ -11,7 +11,7 @@ int rowWithMax1s (vector<vector<int>> &mat, int n, int m) {
 	int maxRowIndx = -1;
 	int indx = m - 1;
 	
-	for (int r = 1; r < n; r++) {
+	for (int r = 0; r < n; r++) {
 		while (indx >= 0 && mat[r][indx] == 1) {
 			indx--;
 			maxRowIndx = r;
