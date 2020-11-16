@@ -37,10 +37,6 @@ signed main() {
 			cin >> arr2[i];
 		}
 		
-		for (int i = 0; i < m; i++) {
-			cin >> arr2[i];
-		}
-		
         unordered_set<int> s;
         for (int i = 0; i < n; i++) {
             s.insert (arr1[i]);
@@ -60,7 +56,7 @@ signed main() {
         else {
             cout << "No\n";
         }
-	}
+    }
 		
     return 0;
 } 

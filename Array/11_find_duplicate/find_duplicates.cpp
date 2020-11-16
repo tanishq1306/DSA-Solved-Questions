@@ -44,8 +44,8 @@ int HareAndTortoise (vector<int> &nums) {
     // Find the "entrance" to the cycle.
     tortoise = nums[0];
     while (tortoise != hare) {
-      tortoise = nums[tortoise];
-      hare = nums[hare];
+		tortoise = nums[tortoise];
+		hare = nums[hare];
     }
 
     return hare;

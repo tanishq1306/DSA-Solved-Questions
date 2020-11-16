@@ -1,4 +1,3 @@
-
 /**
  *    author:  tanishq 
  *    created: 17.10.2020
@@ -39,8 +38,8 @@ signed main() {
 	cin.tie(NULL);
 	cout.tie(NULL);
 	
-	int n, m;
-	cin >> n >> m;
+	int n;
+	cin >> n;
 	
 	vector<int> a(n);
 	for (int i = 0; i < n; i++) {

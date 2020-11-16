@@ -1,4 +1,4 @@
-/**
+ /**
  *    author:  tanishq 
  *    created: 21.10.2020
  **/
@@ -6,21 +6,22 @@
 #define int long long
 using namespace std;
 
-bool find_subarray_with_sum_equal_zero (vector<int> a, int n) {
-	bool found = false;
-	unordered_set<int> s;
-	int sum = a[0];
+bool find_subarray_with_sum_equal_zero (vector<int> arr, int n) {
+	unordered_set<int> sumSet;
+    // Traverse through array and store prefix sums 
+    int sum = 0; 
+    for (int i = 0; i < n; i++) 
+    { 
+        sum += arr[i]; 
+  
+        // If prefix sum is 0 or it is already present 
+        if (sum == 0 || sumSet.find(sum) != sumSet.end()) 
+            return true; 
+  
+        sumSet.insert(sum); 
+    } 
 	
-	for (int i = 1; i < n; i++) {
-		sum += a[i];
-		if (sum == 0 || s.find (sum) != s.end()) {
-			found = true;
-			break;
-		}
-		s.insert (sum);
-	}
-	
-	return found;
+	return false;
 }
 
 signed main() {

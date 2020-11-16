@@ -1,7 +1,7 @@
 
 /**
  *    author:  tanishq 
- *    created: 11.11.2020
+ *    created: 17.11.2020
 **/
 #include <bits/stdc++.h>
 #define int long long
@@ -17,7 +17,19 @@ signed main() {
 	cin >> t;
 	
 	while (t--) {
-
+		int n;
+		cin >> n;
+		
+		vector<int> a(n);
+		for (int i = 0; i < n; i++) {
+			cin >> a[i];
+		}
+		
+		int k;	// characters allowed per line
+		cin >> k;
+		
+		
+		
 	}
 	
 	return 0;
