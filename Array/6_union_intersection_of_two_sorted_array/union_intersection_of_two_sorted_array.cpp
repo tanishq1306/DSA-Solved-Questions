@@ -10,6 +10,7 @@ void UnionAndIntersection (vector<int> &a, vector<int> &b, int n, int m) {
 	vector<int> IntersectionSet;
 	int p1 = 0, p2 = 0;
 	
+	// Assuming that both the arrays are in sorted order
 	while (p1 < n && p2 < m) {
 		if (a[p1] == b[p2]) {
 			IntersectionSet.push_back (a[p1]);
